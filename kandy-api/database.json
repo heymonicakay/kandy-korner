@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Hubby Bubby",
+      "typeId": 2
+    },
+    {
+      "id": 2,
+      "name": "DryVegetable",
+      "typeId": 2
+    },
+    {
+      "id": 3,
+      "name": "Cheery Mountaineer",
+      "typeId": 1
+    },
+    {
+      "id": 4,
+      "name": "Valley Mist",
+      "typeId": 4
+    },
+    {
+      "id": 5,
+      "name": "Ross's Bowls",
+      "typeId": 3
+    },
+    {
+      "id": 6,
+      "name": "Himhe's Highfives",
+      "typeId": 3
+    },
+    {
+      "id": 7,
+      "name": "Nurse Salt",
+      "typeId": 4
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Kandy Korner North",
+      "address": "123 Sour Way",
+      "square-footage": 555,
+      "accessible": false
+    },
+    {
+      "id": 2,
+      "name": "Kandy Korner South",
+      "address": "555 Sweet Way",
+      "square-footage": 1000,
+      "accessible": true
+    }
+  ],
+  "employees": [],
+  "productTypes": [
+    {
+      "id": 1,
+      "type": "Hard Candy"
+    },
+    {
+      "id": 2,
+      "type": "Gum"
+    },
+    {
+      "id": 3,
+      "type": "Chocolate"
+    },
+    {
+      "id": 4,
+      "type": "Sodas"
+    }
+  ],
+  "customers": []
+}
