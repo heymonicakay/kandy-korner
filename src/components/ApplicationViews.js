@@ -2,6 +2,7 @@ import React from "react"
 import { Route } from "react-router-dom"
 import { LocationProvider } from "./locations/LocationProvider"
 import { ProductProvider } from "./products/ProductProvider"
+import { ProductTypeProvider } from "./product-types/ProductTypeProvider"
 
 
 import { LocationList } from "./locations/LocationList"
@@ -19,14 +20,16 @@ export const ApplicationViews = (props) => {
                 </Route>
             </LocationProvider>
 
-            <ProductProvider>
+            <ProductTypeProvider>
+              <ProductProvider>
                 {/* Render the product list when http://localhost:3000/products */}
                 <Route path="/products">
                   <div className="product-container">
                     <ProductList />
                   </div>
                 </Route>
-            </ProductProvider>
+              </ProductProvider>
+            </ProductTypeProvider>
         </>
     )
 }
