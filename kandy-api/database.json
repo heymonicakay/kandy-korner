@@ -52,7 +52,24 @@
       "accessible": true
     }
   ],
-  "employees": [],
+  "employees": [
+    {
+      "name": "Sarah Anderson",
+      "locationId": 1,
+      "manager": "Mike Garvin",
+      "employment": "1",
+      "pay": "17.50",
+      "id": 1
+    },
+    {
+      "name": "Barry Vanilla",
+      "locationId": 1,
+      "manager": "Mike Garvin",
+      "employment": "2",
+      "pay": "17.50",
+      "id": 2
+    }
+  ],
   "productTypes": [
     {
       "id": 1,

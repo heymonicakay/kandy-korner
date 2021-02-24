@@ -20,3 +20,8 @@ ul {
   margin: 0 0;
 }
 
+.btn {
+  background-color:rgb(163, 59, 59);
+  color: white;
+  border: none;
+}

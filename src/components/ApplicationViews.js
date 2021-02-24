@@ -3,8 +3,9 @@ import { Route } from "react-router-dom"
 import { LocationProvider } from "./locations/LocationProvider"
 import { ProductProvider } from "./products/ProductProvider"
 import { ProductTypeProvider } from "./product-types/ProductTypeProvider"
-
-
+import { EmployeeProvider } from "./employees/EmployeeProvider"
+import { EmployeeForm } from "./employees/EmployeeForm"
+import { EmployeeList } from "./employees/EmployeeList"
 import { LocationList } from "./locations/LocationList"
 import { ProductList } from "./products/ProductList"
 
@@ -12,12 +13,24 @@ export const ApplicationViews = (props) => {
     return (
         <>
             <LocationProvider>
-                {/* Render the location list when http://localhost:3000/ */}
-                <Route exact path="/">
-                  <div className="location-container">
-                    <LocationList />
-                  </div>
-                </Route>
+              <EmployeeProvider>
+                <Route path="/employees" render={
+              props => <div className="employee-container">
+              <EmployeeList {...props} />
+              </div>
+              } />
+              <Route exact path="/employees/create" render={
+              props => <div className="employee-form__container">
+              <EmployeeForm { ...props} />
+              </div>
+              }/>
+              </EmployeeProvider>
+
+              <Route exact path="/">
+                <div className="location-container">
+                  <LocationList />
+                </div>
+              </Route>
             </LocationProvider>
 
             <ProductTypeProvider>
